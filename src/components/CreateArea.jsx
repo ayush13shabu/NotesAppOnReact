@@ -18,6 +18,12 @@ function CreateArea(props) {
         }
         )
     }
+
+    function submitNote(event){
+        props.onAdd(note)
+        event.preventDefault()
+    }
+
   return (
     <div>
       <form>
@@ -36,10 +42,7 @@ function CreateArea(props) {
         rows="3" />
 
         <button
-        onClick={() => {
-          props.onAdd(note);
-          setNote("")
-        }}>Add</button>
+        onClick={submitNote}>Add</button>
       </form>
     </div>
   );
