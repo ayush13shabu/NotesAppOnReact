@@ -27,6 +27,13 @@ const notes = [
       key: 5,
       title: "Big ideas",
       content: "Eat more sushi"
+    },
+    {
+      key: 6,
+      title: "Ansh Creds",
+      content:
+        "anshabu@gmail.com "
+        
     }
   ];
   
